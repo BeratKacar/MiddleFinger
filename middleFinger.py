@@ -53,9 +53,9 @@ while cap.isOpened():
             mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
 
             if is_middle_only_up(hand_landmarks.landmark):
-                cv2.putText(frame, "💀 ORTA PARMAK ALGILANDI!", (10, 50),
+                cv2.putText(frame, " ORTA PARMAK ALGILANDI!", (10, 50),
                             cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
-                print("💀 Orta parmak algılandı, 2 saniye içinde kapanacak...")
+                print(" Orta parmak algılandı, 2 saniye içinde kapanacak...")
 
                 # Son 5 saniyelik kamera görüntüsü
                 for i in range(5):  # 50 * 100ms = 2 saniye
